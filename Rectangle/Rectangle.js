@@ -1,0 +1,27 @@
+function calc() {
+
+  let major = window.document.getElementById("major")
+  let maj = Number(major.value)
+
+  let minor = window.document.getElementById("minor")
+  let min = Number(minor.value)
+
+  let res = window.document.getElementById("res")
+
+  let resul = maj * min
+
+  res.innerHTML = `<b>${resul.toFixed(3)}</b>`
+
+  if (major.value.length == 0 || minor.value.length == 0 ) {
+    swal("Hmm... Looks like some fields are empty!")
+
+  } else if (major.value == 0 || minor.value == 0) {
+    swal(`Cmom bro, "0"? Am i a joke to you?`,{
+      button: "U're not.. srr",
+    })
+
+  }
+
+
+
+}

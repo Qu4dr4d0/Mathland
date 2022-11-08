@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="../icon.svg" type="image/x-icon">
+
+  <title>DMC Calc</title>
+
+  <!--CSS FILES-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="TDEE.css">
+
+
+  <script src="TDEE.js"></script>
+</head>
+<body class="text-center pt-5"> 
+
+  <div class="container-md  text-center" style="max-width: 500px;">
+    <div class="card mt-3">
+      <div class="card-header">
+        <h1 class="h5 text-start text-dark">Total daily energy expenditure</h1>
+      </div>
+      <div class="card-body text-start">
+        <h2 class="h6 mb-3">What's your gender?</h2>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+          <label class="form-check-label" for="flexRadioDefault1">Male</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault2">Female</label>
+        </div>
+
+          <h2 class="mt-3 mb-3 h6 text-center">Now, fill in the fields bellow</h2>
+
+          <div class="row text-center">
+            <div class="col">
+              <p>Height: <span class="text-black-50">(cm)</span><br><input id="height" class="inputnum" style="width: 100px" type="number"></p>
+            </div>
+            <div class="col">
+              <p class="">Weight: <span class="text-black-50">(kg)</span><br><input id="weight" class="inputnum" style="width: 100px" type="number"></p>
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col">
+            <p>Age:<br><input id="age" class="inputnum" style="width: 100px" type="number"></p>
+          </div>
+          <div class="col" style="white-space: nowra[];">
+            <p class="mb-1">Activity factor: <button type="button" class="bbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">?</button></p>
+
+
+
+            <div class="modal fade text-start" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Activity factor</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">1,3 - Sedentary<br>1,4 - Slightly active<br>1,5 - Beginner training and cardio almost every day, with a low-activity routine<br>1,6 - Advanced or extremely advanced training and cardio with low activity routine<br>1,7 - Advanced or extremely advanced cardio training with a high activity or hormone routine
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <select id="activity" class="form-select text-center mb-3" aria-label="Default select example" style="width: 100px">
+              <option selected></option>
+              <option>1.3</option>
+              <option>1.4</option>
+              <option>1.5</option>
+              <option>1.6</option>
+              <option>1.7</option>
+            </select><br>
+          </div>
+        </div>
+
+        <div class="row">
+          <button onclick="calc()" type="button" class="btn btn-primary mb-3 mx-auto" style="width: 100px;">Calculate</button>
+          <div class="resultdiv h6 text-center">Your TDEE is: <span id="resultsp"></span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <a href="../index.html" class="btn btn-primary mt-3"><ion-icon name="arrow-undo" style="margin-right: 10px;"></ion-icon>Return to menu</a>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!--JS FILES-->
+  <script src="./js/bootstrap.js"></script>  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
