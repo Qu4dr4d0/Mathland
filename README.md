@@ -1,4 +1,4 @@
-### Mathland
+# GCD-Calculator
 
-[Clique aqui para ver o site!](https://qu4dr4d0.github.io/Mathland/)
+https://qu4dr4d0.github.io/GCD-Calculator/
 

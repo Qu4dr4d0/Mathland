@@ -7,9 +7,9 @@ function calc() {
   let diam = window.document.getElementById("diameter")
   let circ = window.document.getElementById("circumference")
 
-  let arear = 3.14*rad**2
+  let arear = Math.PI * Math.pow(rad, 2)
   let diamr = rad*2
-  let circr = 2*3.14*rad
+  let circr = 2 * Math.PI * rad
 
 
   area.innerHTML = `<b>${arear.toFixed(3)}</b>`

@@ -1,0 +1,137 @@
+.inp {
+  width: 100%;
+  border-radius: 5px;
+  border: solid 0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  }
+
+  .result {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+  }
+
+.txt {
+  width: 100%;
+  border: none;
+  border-bottom: solid 0.5px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+
+
+
+
+
+
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 40px;
+  height: 20px;
+  background: rgba(13, 110, 253, 0.8);
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 2.25px;
+  left: 3px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: rgba(252, 0, 0, 0.8) ;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-85%);
+}
+
+label:active:after {
+  width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.txt:focus {
+  outline: none;
+}
+
+
+  .inp::-webkit-outer-spin-button,
+  .inp::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .inp[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  .inp::placeholder {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #095edc #f1f1f1;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #095edc;
+    border-radius: 20px;
+    border: 3px solid #f1f1f1;
+  }
+
+  body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/math.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media (max-width: 700px)  {
+    body {
+      
+      background-image: url('../img/math-cell.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  
