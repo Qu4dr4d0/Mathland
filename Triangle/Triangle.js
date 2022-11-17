@@ -12,12 +12,12 @@ function calc() {
 
   res.innerHTML = `<b>${resul.toFixed(3)}</b>`
 
-  if (height.value.length == 0 || base.value.length == 0 ) {
+  if (height.value.length == 0 || base.value.length == 0) {
     swal("Hmm... Looks like some fields are empty!")
 
   } else if (height.value == 0 || base.value == 0) {
-    swal(`Cmom bro, "0"? Am i a joke to you?`,{
-      button: "U're not.. srr",
+    swal(`Please, put a number greater than 0`,{
+      button: "Ok, i'll!",
     })
 
   }

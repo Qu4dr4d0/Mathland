@@ -19,8 +19,8 @@ function calc() {
     swal("Hmm... Looks like some fields are empty!")
 
   } else if (n1.value == 0 || n2.value == 0 || n3.value == 0) {
-    swal(`Cmom bro, "0"? Am i a joke to you?`,{
-      button: "U're not.. srr",
+    swal(`Please, put a number greater than 0`,{
+      button: "Ok, i'll!",
     })
 
   }

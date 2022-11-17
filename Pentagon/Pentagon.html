@@ -19,10 +19,32 @@
 </head>
 <body class="pt-5  text-center"> 
 
-  <div class="container-md " style="max-width: 500px;">
+  <div class="container-md" style="max-width: 500px;">
     <div class="card mt-3 shadow">
-      <div class="card-header">
+      <div class="card-header justify-content-between" style="display: flex;">
         <h1 class="h5 text-start text-dark">Pentagon area</h1>
+        <button type="button" class="bbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">?</button>
+      </div>
+
+
+      <div class="modal fade text-start" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">How it works?</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>To calculate the area of an pentagon, we use the this formula:</p>
+              <img class="mb-3" src="../img/f-pentagon.svg" alt="" width="150px">
+              <p><b>Legend</b><br>A = Area<br>s = Side<br>Tan(36°) = 0.7265</p>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="card-body text-center">
       

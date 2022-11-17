@@ -1,30 +1,39 @@
 function calc() {
 
-  let radius = window.document.getElementById("radius")
-  let rad = Number(radius.value)
+  let r = window.document.getElementById("flexRadioDefault1")
+  let d = window.document.getElementById("flexRadioDefault2")
+  let c = window.document.getElementById("choice")
+
+  let number = window.document.getElementById("number")
+  let n = Number(number.value)
 
   let area = window.document.getElementById("area")
-  let diam = window.document.getElementById("diameter")
-  let circ = window.document.getElementById("circumference")
 
-  let arear = Math.PI * Math.pow(rad, 2)
-  let diamr = rad*2
-  let circr = 2 * Math.PI * rad
+  let radFor = Math.PI * Math.pow(n, 2)
+  let diaFor = Math.PI * Math.pow(n, 2) / 4
 
 
-  area.innerHTML = `<b>${arear.toFixed(3)}</b>`
-  diam.innerHTML = `<b>${diamr.toFixed(2)}</b>`
-  circ.innerHTML = `<b>${circr.toFixed(2)}</b>`
-
-  if (radius.value.length == 0) {
+  if (number.value.length == 0) {
     swal("Hmm... Looks like the radius field are empty!")
 
-  } else if (radius.value == 0) {
-    swal(`Cmom bro, "0"? Am i a joke to you?`,{
-      button: "lol, u're not.. srr",
+  } else if (number.value == 0) {
+    swal(`Please, put a number greater than 0`,{
+      button: "Ok, i'll!",
     })
 
   }
+
+  if (r.checked) {
+    area.innerHTML = `<b>${radFor.toFixed(2)}</b>`
+    c.innerHTML = `radius`
+  }
+
+  if (d.checked) {
+    area.innerHTML = `<b>${diaFor.toFixed(2)}</b>`
+    c.innerHTML = `diameter`
+  }
+
+
 
 
 

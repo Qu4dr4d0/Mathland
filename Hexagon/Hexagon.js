@@ -17,8 +17,8 @@ function calc() {
     swal("Hmm... Looks like the side field are empty!")
 
   } else if (side.value == 0) {
-    swal(`Cmom bro, "0"? Am i a joke to you?`,{
-      button: "U're not.. srr",
+    swal(`Please, put a number greater than 0`,{
+      button: "Ok, i'll!",
     })
 
   }

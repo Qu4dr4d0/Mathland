@@ -1,0 +1,79 @@
+.inputnum {
+  width: 100%;
+  padding: 0.375rem 0rem 0.375rem 0rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-repeat: no-repeat;  border: 1px solid #ced4da;
+  border-radius: 0.400rem;
+  text-align: center;
+}
+
+.inputnum::placeholder {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.inputnum:focus {
+  outline: none;
+}
+
+
+
+.inpunumt::-webkit-outer-spin-button,
+.inputnum::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputnum[type=number] {
+  -moz-appearance: textfield;
+}
+
+.bbtn  {
+  color: white;
+  background-color: rgb(13, 110, 253);
+  border-radius: 50%;
+  border: none;
+  padding: 0px 12px;
+  transition: all 0.15s ease 0s;
+  font-size: larger;
+}
+.bbtn:hover{
+  background-color: #095edc;
+}
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #095edc #f1f1f1;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #095edc;
+	border-radius: 20px;
+	border: 3px solid #f1f1f1;
+}
+
+body {
+  height: 100vh;
+  background-image: url('../img/math.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 700px)  {
+  body {
+    background-image: url('../img/math-cell.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -20,9 +20,31 @@
 <body class="text-center pt-5"> 
 
   <div class="container-md  text-center" style="max-width: 500px;">
-    <div class="card mt-3">
-      <div class="card-header">
+    <div class="card mt-3 shadow">
+      <div class="card-header justify-content-between" style="display: flex;">
         <h1 class="h5 text-start text-dark">Rectangle area</h1>
+        <button type="button" class="bbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">?</button>
+      </div>
+
+
+      <div class="modal fade text-start" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">How it works?</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>To calculate the area of an rectangle, we use the this formula:</p>
+              <img class="mb-4" src="../img/f-rectangle.svg" alt="" width="120px">
+              <p><b>Legend:</b><br>A = Area<br>X = Major side<br>Y = Minor side</p>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="card-body text-center">
        
@@ -30,10 +52,10 @@
 
           <div class="row text-center">
             <div class="col">
-              <p>Major side:<br><input id="major" class="inputnum" style="width: 80px" type="number" placeholder="A"></p>
+              <p>Major side:<br><input id="major" class="inputnum" style="width: 150px" type="number" placeholder="A"></p>
             </div>
             <div class="col">
-              <p>Minor side:<br><input id="minor" class="inputnum" style="width: 80px" type="number" placeholder="B"></p>
+              <p>Minor side:<br><input id="minor" class="inputnum" style="width: 150px" type="number" placeholder="B"></p>
             </div>
           </div>
 

@@ -10,6 +10,10 @@
   border-radius: 0.400rem;
 }
 
+.radius:focus {
+  outline: none;
+}
+
 .radius::-webkit-outer-spin-button,
 .radius::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -29,8 +33,9 @@
   background-color: rgb(13, 110, 253);
   border-radius: 50%;
   border: none;
-  padding: 0px 8px;
+  padding: 0px 12px;
   transition: all 0.15s ease 0s;
+  font-size: large;
 }
 .bbtn:hover{
   background-color: #095edc;
