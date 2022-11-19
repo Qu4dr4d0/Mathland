@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+body {
+
+  height: 100vh;
+  width: 100%;
+
+  font-family: 'Bebas Neue', cursive;
+  background-image: url(../img/bg1.svg);
+
+
+
+}
+
+
+
+.intro-container {
+  width: 100%;
+  padding: 150px 60px;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.intro {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.intro :nth-child(1) {
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 70%;
+}
+
+
+
+
+
+/*CALCULATORS*/
+
+.calculators-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 100px;
+  text-align: center;
+}
+
+
+.card1 {
+  background-color: #fff;
+  position: relative;
+  padding: 100px 15px 0px;
+  border: solid rgba(0, 0, 0, 0.175) 1px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 999;
+}
+
+.card1::after {
+  content: '';
+  width: 150px;
+  height: 150px;
+  background-image: url(../img/sphere.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -70px;
+
+  
+}
+
+.card2 {
+  background-color: #fff;
+  position: relative;
+  padding: 100px 15px 0px;
+  border: solid rgba(0, 0, 0, 0.175) 1px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.card2::after {
+  content: '';
+  width: 120px;
+  height: 120px;
+  background-image: url(../img/cube.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -40px;
+  
+}
+
+.card3 {
+  background-color: #fff;
+  position: relative;
+  padding: 100px 15px 0px;
+  border: solid rgba(0, 0, 0, 0.175) 1px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.card3::after {
+  content: '';
+  width: 120px;
+  height: 120px;
+  background-image: url(../img/cylinder.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -40px;
+  z-index: 2;
+}
+
+.card4 {
+  background-color: #fff;
+  position: relative;
+  padding: 100px 15px 0px;
+  border: solid rgba(0, 0, 0, 0.175) 1px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 999;
+}
+
+.card4::after {
+  content: '';
+  width: 120px;
+  height: 120px;
+  background-image: url(../img/cone.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -40px;
+
+  
+}
+
+.card5 {
+  background-color: #fff;
+  position: relative;
+  padding: 100px 15px 0px;
+  border: solid rgba(0, 0, 0, 0.175) 1px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 999;
+}
+
+.card5::after {
+  content: '';
+  width: 120px;
+  height: 120px;
+  background-image: url(../img/orthohedron.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -40px;
+
+  
+}
+
+.card6 {
+  background-color: #fff;
+  position: relative;
+  padding: 100px 15px 0px;
+  border: solid rgba(0, 0, 0, 0.175) 1px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 999;
+}
+
+.card6::after {
+  content: '';
+  width: 190px;
+  height: 190px;
+  background-image: url(../img/tetrahedron.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -40px;
+  
+}
+
+.card7 {
+  background-color: #fff;
+  position: relative;
+  padding: 100px 15px 0px;
+  border: solid rgba(0, 0, 0, 0.175) 1px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 999;
+}
+
+.card7::after {
+  content: '';
+  width: 190px;
+  height: 190px;
+  background-image: url(../img/pyramid.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -60px;
+  
+}
+
+
+
+
+.title {
+  font-size: 25px;
+}
+
+.blabla {
+  font-size: 15px;
+}
+
+.btn {
+  font-size: 15px;
+  color: #fff;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+.b1 {
+  background-color: #003A53;
+}
+
+.b2 {
+  background-color: #003F5C;
+}
+
+.b3 {
+  background-color: #2C4875;
+}
+
+.b4 {
+  background-color: #A461AA;
+}
+
+.b5 {
+  background-color: #BC5090;
+}
+
+.b6 {
+  background-color: #FF4745;
+}
+
+.b7 {
+  background-color: #FFA600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
