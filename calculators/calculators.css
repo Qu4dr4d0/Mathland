@@ -35,19 +35,17 @@ body {
   text-align: center;
 }
 
-
-
-.intro :nth-child(1) {
-  text-transform: uppercase;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 70%;
+.logo {
+  max-width: 100%;
 }
 
+@media (max-width: 420px) {
+  
+  .intro-container {
+    padding: 120px 30px;
+  }
 
-
-
-
+}
 
 
 
@@ -166,7 +164,6 @@ body {
 
 .b1 {
   background-color: #334D5C;
-  ba
 }
 
 .b2 {

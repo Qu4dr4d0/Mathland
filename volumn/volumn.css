@@ -35,12 +35,16 @@ body {
   text-align: center;
 }
 
+.logo {
+  max-width: 100%;
+}
 
-.intro :nth-child(1) {
-  text-transform: uppercase;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 70%;
+@media (max-width: 420px) {
+  
+  .intro-container {
+    padding: 120px 30px;
+  }
+
 }
 
 
