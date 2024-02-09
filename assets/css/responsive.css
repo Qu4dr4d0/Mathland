@@ -1,0 +1,27 @@
+@media (max-width: 775px) {
+    #navToggle {
+        display: flex !important;
+    }
+
+    #seeToo {
+        display: flex !important;
+    }
+    #leftLinks {
+        display: none;
+    }
+    #cardsWrapper {
+        justify-content: center;
+    }
+}
+@media (max-width: 992px) {
+    #rowOne {
+        justify-content: center;
+    }
+}
+@media (max-width: 1200px) {
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
