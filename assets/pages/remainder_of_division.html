@@ -145,13 +145,16 @@
 
           <h1>Online Remainder of Division Calculator</h1>
           <p>Just enter the numbers below and click on "Calculate Remainder", remembering that it does not work for fractional numbers.</p>
-          <section class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center">
-            <div class="input-group mb-3">
-              <span class="input-group-text">Number:</span>
-              <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-              <button class="btn btn-outline-secondary btn-light" type="button" id="">Calculate</button>
+          <section class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
+            <div id="remainder_form" class="input-group mb-3">
+              <span class="input-group-text">What is the remainder</span>
+              <span class="input-group-text">after dividing:</span>
+              <input type="text" class="form-control text-center remainder_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <span class="input-group-text">by:</span>
+              <input type="text" class="form-control text-center remainder_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
             </div>
-              <p id="" class="fw-semibold text-center text-bg-light"></p>
+            <button class="btn btn-outline-secondary btn-light mb-3" type="button" id="">Calculate</button>
+              <p id="" class="fw-semibold text-center text-bg-light px-2 rounded"></p>
           </section>
 
         <!--STOP MAKING CHANGES HERE!!-->
@@ -195,5 +198,8 @@
 
     <!--ICONS-->
     <script src="https://kit.fontawesome.com/b6824fbda7.js" crossorigin="anonymous"></script>
+    
+    <!--SCRIPT-->
+    <script src="../js/script.js"></script>
   </body>
 </html>

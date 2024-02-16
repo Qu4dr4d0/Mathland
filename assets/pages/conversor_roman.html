@@ -145,13 +145,13 @@
 
           <h1>Roman Numerals Converter</h1>
           <p>Roman numeral converter allows you to convert decimal numerals to Roman numerals and vice versa.</p>
-          <section class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center">
+          <section id="roman_form" class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
             <div class="input-group mb-3">
-              <span class="input-group-text">Decimal:</span>
-              <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-              <button class="btn btn-outline-secondary btn-light" type="button" id="">Convert to Roman</button>
+              <span class="input-group-text">Roman Numbers:</span>
+              <input type="text" class="form-control roman_input text-center" placeholder="Ex: XV" aria-label="Example text with button addon" aria-describedby="button-addon1">
             </div>
-              <p id="" class="fw-semibold text-center text-bg-light"></p>
+            <button class="btn btn-outline-secondary btn-light mb-3" type="button" id="">Convert</button>
+            <p id="" class="fw-semibold text-center text-bg-light px-2 rounded"></p>
           </section>
 
         <!--STOP MAKING CHANGES HERE!!-->
@@ -195,5 +195,8 @@
 
     <!--ICONS-->
     <script src="https://kit.fontawesome.com/b6824fbda7.js" crossorigin="anonymous"></script>
+    
+    <!--SCRIPT-->
+    <script src="../js/script.js"></script>
   </body>
 </html>

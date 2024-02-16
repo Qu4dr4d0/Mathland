@@ -145,13 +145,13 @@
 
           <h1>Number Factorization Calculator</h1>
           <p>Online calculator that decomposes a number into prime factors.</p>
-          <section class="flex p-2 mb-4 bg-secondary-subtle rounded">
-            <div class="input-group mb-3">
+          <section class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
+            <div id="factor_form" class="input-group mb-3">
               <span class="input-group-text">Number:</span>
-              <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-              <button class="btn btn-outline-secondary btn-light" type="button" id="">Factor</button>
+              <input type="text" class="form-control factor_input text-center" placeholder="Ex: 30" aria-label="Example text with button addon" aria-describedby="button-addon1">
             </div>
-            <p id="" class="fw-semibold text-center text-bg-light"></p>
+            <button class="btn btn-outline-secondary btn-light mb-3" type="button" id="">Factor</button>
+            <p id="" class="fw-semibold text-center text-bg-light px-2 rounded"></p>
           </section>
 
         <!--STOP MAKING CHANGES HERE!!-->
@@ -195,5 +195,8 @@
 
     <!--ICONS-->
     <script src="https://kit.fontawesome.com/b6824fbda7.js" crossorigin="anonymous"></script>
+    
+    <!--SCRIPT-->
+    <script src="../js/script.js"></script>
   </body>
 </html>

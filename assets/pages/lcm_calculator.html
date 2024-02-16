@@ -144,15 +144,19 @@
           <!--START MAKING CHANGES HERE!!-->
 
           <h1>Online GCD Calculator</h1>
-          <p>Online calculator for LCM (least common multiple) of 2 to 6 non-zero natural numbers.</p>
-          <section class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center">
-            <p>Just enter your numbers in the spaces below, then click "Calculate"</p>
-            <div class="input-group mb-3">
-              <span class="input-group-text">Number:</span>
-              <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-              <button class="btn btn-outline-secondary btn-light" type="button" id="">Calculate</button>
+          <p>Online calculator for LCM (least common multiple) of 2 to 6 non-zero natural numbers.<br>Just enter your numbers in the spaces below, then click "Calculate"</p>
+          <section class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
+            <div id="lcm_form" class="input-group mb-3">
+              <span class="input-group-text">Numbers:</span>
+              <input type="text" class="form-control lcm_input text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" value="12">
+              <input type="text" class="form-control lcm_input text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" value="3">
+              <input type="text" class="form-control lcm_input text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <input type="text" class="form-control lcm_input text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <input type="text" class="form-control lcm_input text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <input type="text" class="form-control lcm_input text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
             </div>
-              <p id="" class="fw-semibold text-center text-bg-light"></p>
+            <button class="btn btn-outline-secondary btn-light mb-3" type="button" id="">Calculate</button>
+            <p id="" class="fw-semibold text-center text-bg-light px-2 rounded"></p>
           </section>
 
         <!--STOP MAKING CHANGES HERE!!-->
@@ -196,5 +200,8 @@
 
     <!--ICONS-->
     <script src="https://kit.fontawesome.com/b6824fbda7.js" crossorigin="anonymous"></script>
+    
+    <!--SCRIPT-->
+    <script src="../js/script.js"></script>
   </body>
 </html>

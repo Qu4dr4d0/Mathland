@@ -137,7 +137,7 @@
 
         <!--RIGHT COL-->
 
-        <div id="" class="col-9">
+        <div class="col-9">
 
 
 
@@ -146,14 +146,83 @@
           <h1>Online Percentage Calculator</h1>
           <p>Online tool that allows you to calculate percentages in various ways, increases, discounts, proportions, etc.
             Just choose which of the percentage calculators best applies to your problem, type in the spaces and click the calculate button in the corresponding line.</p>
-          <section class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center">
-            <div class="input-group mb-3">
-              <span class="input-group-text">Number:</span>
-              <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-              <button class="btn btn-outline-secondary btn-light" type="button" id="">Calculate</button>
+            <!--PERCENTAGE 1-->
+          <section  class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
+            <div id="percentage_form" class="input-group mb-3">
+              <span class="input-group-text fw-medium">How much is:</span>
+              <input id="box1__inp1" type="text" class="form-control text-center percentage_input" placeholder="-- %" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <span class="input-group-text fw-medium">of:</span>
+              <input id="box1__inp2" type="text" class="form-control text-center percentage_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
             </div>
-              <p id="" class="fw-semibold text-center text-bg-light"></p>
-          </section>
+            <button class="btn btn-outline-secondary btn-light mb-3" type="button" onclick="percentage1()">Calculate</button>
+            <p id="result1" class="fw-semibold text-center text-bg-light px-5 rounded">1</p>
+           </section>
+
+            <!--PERCENTAGE 2-->
+            <section  class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
+              <div id="percentage_form" class="input-group mb-3">
+                <span class="input-group-text fw-medium">The value:</span>
+                <input id="box2__inp1" type="text" class="form-control text-center percentage_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <span class="input-group-text fw-medium">is what percentage of:</span>
+                <input id="box2__inp2" type="text" class="form-control text-center percentage_input" placeholder="% --" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              </div>
+              <button class="btn btn-outline-secondary btn-light mb-3" type="button" onclick="percentage2()">Calculate</button>
+              <p id="result2" class="fw-semibold text-center text-bg-light px-5 rounded">2</p>
+            </section>
+
+            <!--PERCENTAGE 3-->
+            <section  class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
+              <div id="percentage_form" class="input-group mb-3 text-break">
+                <span class="input-group-text fw-medium text-break">A value of:</span>
+                <input id="box3__inp1" type="text" class="form-control text-center percentage_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <span class="input-group-text fw-medium">which INCREASED to:</span>
+                <input id="box3__inp2" type="text" class="form-control text-center percentage_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <span class="input-group-text fw-medium text-break">What was the</span>
+                <span class="input-group-text fw-medium text-break">percentage increase?</span>
+              </div>
+              <button class="btn btn-outline-secondary btn-light mb-3" type="button" onclick="percentage3()">Calculate</button>
+              <p id="result3" class="fw-semibold text-center text-bg-light px-5 rounded">3</p>
+            </section>
+
+            <!--PERCENTAGE 4-->
+            <section  class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
+              <div id="percentage_form" class="input-group mb-3 text-break">
+                <span class="input-group-text fw-medium text-break">A value of:</span>
+                <input id="box4__inp1" type="text" class="form-control text-center percentage_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <span class="input-group-text fw-medium">which DECREASED to:</span>
+                <input id="box4__inp2" type="text" class="form-control text-center percentage_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <span class="input-group-text fw-medium text-break">What was the</span>
+                <span class="input-group-text fw-medium text-break">percentage decrease?</span>
+              </div>
+              <button class="btn btn-outline-secondary btn-light mb-3" type="button" onclick="percentage4()">Calculate</button>
+              <p id="result4" class="fw-semibold text-center text-bg-light px-5 rounded">4</p>
+            </section>
+
+            <!--PERCENTAGE 5-->
+            <section  class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
+              <div id="percentage_form" class="input-group mb-3 text-break">
+                <span class="input-group-text fw-medium text-break">I have a value of:</span>
+                <input id="box5__inp1" type="text" class="form-control text-center percentage_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <span class="input-group-text fw-medium">and i want to INCREASE:</span>
+                <input id="box5__inp2" type="text" class="form-control text-center percentage_input" placeholder="% --" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <span class="input-group-text fw-medium text-break">What is the result?</span>
+              </div>
+              <button class="btn btn-outline-secondary btn-light mb-3" type="button" onclick="percentage5()">Calculate</button>
+              <p id="result5" class="fw-semibold text-center text-bg-light px-5 rounded">5</p>
+           </section>
+
+            <!--PERCENTAGE 6-->
+            <section  class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
+              <div id="percentage_form" class="input-group mb-3 text-break">
+                <span class="input-group-text fw-medium text-break">I have a value of:</span>
+                <input id="box6__inp1" type="text" class="form-control text-center percentage_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <span class="input-group-text fw-medium">and i want to DECREASE:</span>
+                <input id="box6__inp2" type="text" class="form-control text-center percentage_input" placeholder="% --" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <span class="input-group-text fw-medium text-break">What is the result?</span>
+              </div>
+              <button class="btn btn-outline-secondary btn-light mb-3" type="button" onclick="percentage6()">Calculate</button>
+              <p id="result6" class="fw-semibold text-center text-bg-light px-5 rounded">6</p>
+            </section>
 
         <!--STOP MAKING CHANGES HERE!!-->
 
@@ -196,5 +265,8 @@
 
     <!--ICONS-->
     <script src="https://kit.fontawesome.com/b6824fbda7.js" crossorigin="anonymous"></script>
+    
+    <!--SCRIPT-->
+    <script src="../js/script.js"></script>
   </body>
 </html>

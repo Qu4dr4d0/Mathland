@@ -132,48 +132,40 @@
           </div>
         </div>
 
-
-
-
         <!--RIGHT COL-->
 
         <div id="" class="col-9">
-
-
 
           <!--START MAKING CHANGES HERE!!-->
 
           <h1>Simple Rule of Three Calculator</h1>
           <p>The simple rule of three calculator allows you to discover a number in proportion to two others that are known.</p>
-          <section class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center">
+          <section id="rule3_form" class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
             <div class="input-group mb-3">
-              <span class="input-group-text">Number:</span>
-              <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-              <button class="btn btn-outline-secondary btn-light" type="button" id="">Calculate</button>
+              <input id="inp1" type="text" class="form-control text-center rule3_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <span class="input-group-text"><i class="fa-solid fa-arrow-right"></i></span>
+              <input id="inp2" type="text" class="form-control text-center rule3_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
             </div>
-              <p id="" class="fw-semibold text-center text-bg-light"></p>
+            <div class="input-group mb-3">
+              <input id="inp3" type="text" class="form-control text-center rule3_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <span class="input-group-text"><i class="fa-solid fa-arrow-right"></i></span>
+              <span id="result" class="input-group-text d-flex justify-content-center fw-semibold" style="flex: 1;">X</span>
+            </div>
+            <button onclick="ruleOf3()" id="ruleOf3_btn" class="btn btn-outline-secondary btn-light mb-3" type="button">Calculate</button>
           </section>
 
         <!--STOP MAKING CHANGES HERE!!-->
 
-
-
-
-
-        <div class="list-group fs-8 color-secondary mb-4">
-          <a class="list-group-item list-group-item-action disabled fw-bold">SEE TOO:</a>
-          <a href="lcm_calculator.html" class="list-group-item list-group-item-action">Online LCM Calculator</a>
-          <a href="gcd_calculator.html" class="list-group-item list-group-item-action">Online GCD Calculator</a>
-          <a href="conversor_roman.html" class="list-group-item list-group-item-action">Roman Numerals Converter</a>
-          <a href="rule_of_three_calculator.html" class="list-group-item list-group-item-action">Simple Rule of 3 Calculator: calculate it here!</a>
-          <a href="remainder_of_division.html" class="list-group-item list-group-item-action">Online Remainder of Division Calculator</a>
-        </div>
+          <div class="list-group fs-8 color-secondary mb-4">
+            <a class="list-group-item list-group-item-action disabled fw-bold">SEE TOO:</a>
+            <a href="lcm_calculator.html" class="list-group-item list-group-item-action">Online LCM Calculator</a>
+            <a href="gcd_calculator.html" class="list-group-item list-group-item-action">Online GCD Calculator</a>
+            <a href="conversor_roman.html" class="list-group-item list-group-item-action">Roman Numerals Converter</a>
+            <a href="rule_of_three_calculator.html" class="list-group-item list-group-item-action">Simple Rule of 3 Calculator: calculate it here!</a>
+            <a href="remainder_of_division.html" class="list-group-item list-group-item-action">Online Remainder of Division Calculator</a>
+          </div>
           
         </div>
-
-
-
-
 
     </main>
     <footer id="footer" class="text-white d-flex align-items-center justify-content-around bg-secondary" style="min-height: 100px;">      
@@ -195,5 +187,8 @@
 
     <!--ICONS-->
     <script src="https://kit.fontawesome.com/b6824fbda7.js" crossorigin="anonymous"></script>
+
+    <!--SCRIPT-->
+    <script src="../js/script.js"></script>
   </body>
 </html>

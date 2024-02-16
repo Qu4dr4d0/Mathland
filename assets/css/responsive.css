@@ -1,3 +1,4 @@
+/*LAYOUT*/
 @media (max-width: 775px) {
     #navToggle {
         display: flex !important;
@@ -18,10 +19,91 @@
         justify-content: center;
     }
 }
+@media (max-width: 400px) {
+    #rowOne {
+        margin: 0px !important;
+
+    }
+}
 @media (max-width: 1200px) {
     #footer {
         flex-direction: column;
         text-align: center;
     }
 }
+/*ONLINE CALCULATORS*/
+/*ROMAN*/
+@media (max-width: 600px) {
+    #roman_form {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .roman_input {
+        width: 100% !important;
+    }
+}
+/*FACTORING*/
+@media (max-width: 600px) {
+    #factor_form {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .factor_input {
+        width: 100% !important;
+    }
+}
+/*GCD*/
+@media (max-width: 1000px) {
+    #gcd_form {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .gcd_input {
+        min-width: 100% !important;
+    }
+}
+/*LCM*/
+@media (max-width: 600px) {
+    #lcm_form {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .lcm_input {
+        min-width: 100% !important;
+    }
+}
+/*PERCENTAGE*/
+@media (max-width: 1200px) {
+    #percentage_form {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .percentage_input {
+        width: 100% !important;
+    }
+}
+/*RULE OF 3*/
+@media (max-width: 1200px) {
+    #rule3_form {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .rule_input {
+        width: 100% !important;
+    }
+}
+/*REMAINDER*/
+@media (max-width: 1000px) {
+    #remainder_form {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .remainder_input {
+        min-width: 100% !important;
+    }
+}
+/*CALCULATE AREAS*/
+/*CIRCLE*/
+
+
 
