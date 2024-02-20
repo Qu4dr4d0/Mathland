@@ -145,13 +145,25 @@
 
           <h1>Calculate ​​the Circle Area</h1>
           <p>Select a formula, whether by Radius or Diameter, enter what is requested and then click on the "Calculate Area" button to calculate the area of ​​the circle.</p>
-          <section class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center">
-            <div class="input-group mb-3">
-              <span class="input-group-text">Number:</span>
-              <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-              <button class="btn btn-outline-secondary btn-light" type="button" id="">Calculate</button>
+          <section class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="circle" id="radius">
+              <label class="form-check-label" for="radius">
+                Radius Formula
+              </label>
             </div>
-              <p id="" class="fw-semibold text-center text-bg-light"></p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="circle" id="diameter" checked>
+              <label class="form-check-label" for="diameter">
+                Diameter Formula
+              </label>
+            </div>
+            <div id="factor_form" class="input-group mb-3">
+              <span class="input-group-text">Value:</span>
+              <input id="inp1" type="text" class="form-control factor_input text-center" placeholder="Ex: 30" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+            <button onclick="circle()" class="btn btn-outline-secondary btn-light mb-3" type="button" id="">Calculate</button>
+            <p id="result" class="fw-semibold text-center text-bg-light px-2 rounded"></p>
           </section>
 
         <!--STOP MAKING CHANGES HERE!!-->

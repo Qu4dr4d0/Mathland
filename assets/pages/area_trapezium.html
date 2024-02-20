@@ -145,13 +145,17 @@
 
           <h1>Online Trapezium Area Calculator</h1>
           <p>Just enter the bases and height of the trapezium below and then click "Calculate".</p>
-          <section class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center">
-            <div class="input-group mb-3">
-              <span class="input-group-text">Side:</span>
-              <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-              <button class="btn btn-outline-secondary btn-light" type="button" id="">Calculate</button>
+          <section class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
+            <div id="factor_form" class="input-group mb-3">
+              <span class="input-group-text">higher base:</span>
+              <input id="inp1" type="text" class="form-control factor_input text-center" placeholder="Ex: 30" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <span class="input-group-text">Minor base:</span>
+              <input id="inp2" type="text" class="form-control factor_input text-center" placeholder="Ex: 30" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <span class="input-group-text">Height:</span>
+              <input id="inp3" type="text" class="form-control factor_input text-center" placeholder="Ex: 30" aria-label="Example text with button addon" aria-describedby="button-addon1">
             </div>
-              <p id="" class="fw-semibold text-center text-bg-light"></p>
+            <button onclick="trapezium()" class="btn btn-outline-secondary btn-light mb-3" type="button">Calculate</button>
+            <p id="result" class="fw-semibold text-center text-bg-light px-2 rounded"></p>
           </section>
 
         <!--STOP MAKING CHANGES HERE!!-->

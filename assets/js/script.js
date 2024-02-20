@@ -208,7 +208,7 @@ function ruleOf3() {
 
 
 
-/*SIMPLE RULE OF 3*/
+/*REMAINDER*/
 function remainder() {
     let inp1 = Number(document.getElementById("inp1").value);
     let inp2 = Number(document.getElementById("inp2").value);
@@ -218,4 +218,171 @@ function remainder() {
     inp1 == "" || inp2 == ""
       ? (result.innerHTML = `Please, fulfill al the field!`)
       : (result.innerHTML = `The remainder of dividing ${inp1} by ${inp2}, is: ${remainder}`);
-  }
+}
+
+
+
+
+
+/*AREAS*/
+/*CIRCLE AREA*/
+function circle() {
+    let radius = document.getElementById("radius");
+    let diameter = document.getElementById("diameter");
+    let inp1 = Number(document.getElementById("inp1").value);
+    let result = document.getElementById("result");
+
+    let radiusFormula =  Math.PI * inp1 ** 2;
+    let diameterFormula = (Math.PI * inp1 ** 2)  / 4;
+  
+    if (inp1 == "") {
+        result.innerHTML = `Please, put a number!`;
+    } else if (radius.checked) {
+        result.innerHTML = `The area of this circle is: ${radiusFormula.toFixed(2)}`;
+    } else if (diameter.checked) {
+        result.innerHTML = `The area of this circle is: ${diameterFormula.toFixed(2)}`;
+    }
+}
+/*SQUARE AREA*/
+function square() {
+    let inp1 = Number(document.getElementById("inp1").value);
+    let result = document.getElementById("result");
+
+    let squareFormula = inp1 * inp1;
+
+    inp1 == ""
+    ? result.innerHTML = `Please, the side value!`
+    : result.innerHTML = `The area of this square is: ${squareFormula.toFixed(2)}`;
+}
+/*RECTANGLE AREA*/
+function rectangle() {
+    let inp1 = Number(document.getElementById("inp1").value);
+    let inp2 = Number(document.getElementById("inp2").value);
+    let result = document.getElementById("result");
+
+    let rectangleFormula = inp1 * inp2;
+  
+    inp1 == "" || inp2 == ""
+    ? result.innerHTML = `Please, fulfill al the field!`
+    : result.innerHTML = `The area of this rectangle is: ${rectangleFormula.toFixed(2)}`;
+}
+/*TRIANGLE AREA*/
+function triangle() {
+    let inp1 = Number(document.getElementById("inp1").value);
+    let inp2 = Number(document.getElementById("inp2").value);
+    let result = document.getElementById("result");
+
+    let triangleFormula = (inp1 * inp2) / 2;
+  
+    inp1 == "" || inp2 == ""
+    ? result.innerHTML = `Please, fulfill al the field!`
+    : result.innerHTML = `The area of this triangle is: ${triangleFormula.toFixed(2)}`;
+}
+/*PENTAGON AREA*/
+function pentagon() {
+    let inp1 = Number(document.getElementById("inp1").value);
+    let result = document.getElementById("result");
+
+    let pentagonFormula = (5 * (inp1**2)) / (4 * 0.7265);
+
+    inp1 == ""
+    ? result.innerHTML = `Please, put the side value!`
+    : result.innerHTML = `The area of this pentagon is: ${pentagonFormula.toFixed(2)}`;
+}
+/*HEXAGON AREA*/
+function hexagon() {
+    let inp1 = Number(document.getElementById("inp1").value);
+    let result = document.getElementById("result");
+
+    let hexagonFormula = (6 * (inp1**2)) / (4 * 0.5774);
+
+    inp1 == ""
+    ? result.innerHTML = `Please, put the side value!`
+    : result.innerHTML = `The area of this hexagon is: ${hexagonFormula.toFixed(2)}`;
+}
+/*REGULAR POLYGON AREA*/
+function regularPolygon() {
+    let inp1 = Number(document.getElementById("inp1").value);
+    let inp2 = Number(document.getElementById("inp2").value);
+    let result = document.getElementById("result");
+
+    let regularFormula = (inp2 ** 2 * inp1) / (4 * Math.tan(Math.PI / inp1));
+  
+    inp1 == "" || inp2 == ""
+    ? result.innerHTML = `Please, fulfill al the field!`
+    : result.innerHTML = `The area of this regular polygon is: ${regularFormula.toFixed(2)}`;
+}
+/*LOSANGO AREA*/
+function losango() {
+    let inp1 = Number(document.getElementById("inp1").value);
+    let inp2 = Number(document.getElementById("inp2").value);
+    let result = document.getElementById("result");
+
+    let losangoFormula = (inp1 * inp2) / 2;
+  
+    inp1 == "" || inp2 == ""
+    ? result.innerHTML = `Please, fulfill al the field!`
+    : result.innerHTML = `The area of this losango is: ${losangoFormula.toFixed(2)}`;
+}
+/*TRAPEZIUM AREA*/
+function trapezium() {
+    let inp1 = Number(document.getElementById("inp1").value);
+    let inp2 = Number(document.getElementById("inp2").value);
+    let inp3 = Number(document.getElementById("inp3").value);
+    let result = document.getElementById("result");
+
+    let trapeziumFormula = (inp1 + inp2) * inp3 / 2;
+  
+    inp1 == "" || inp2 == "" || inp3 == ""
+    ? result.innerHTML = `Please, fulfill al the field!`
+    : result.innerHTML = `The area of this trapezium is: ${trapeziumFormula.toFixed(2)}`;
+}
+/*PARALLELOGRAM AREA*/
+function parallelogram() {
+    let inp1 = Number(document.getElementById("inp1").value);
+    let inp2 = Number(document.getElementById("inp2").value);
+    let result = document.getElementById("result");
+
+    let parallelogramFormula = inp1 * inp2;
+  
+    inp1 == "" || inp2 == ""
+    ? result.innerHTML = `Please, fulfill al the field!`
+    : result.innerHTML = `The area of this parallelogram is: ${parallelogramFormula.toFixed(2)}`;
+}
+/*ELLIPSE AREA*/
+function parallelogram() {
+    let inp1 = Number(document.getElementById("inp1").value);
+    let inp2 = Number(document.getElementById("inp2").value);
+    let result = document.getElementById("result");
+
+    let ellipseFormula = Math.PI * inp1 * inp2;
+  
+    inp1 == "" || inp2 == ""
+    ? result.innerHTML = `Please, fulfill al the field!`
+    : result.innerHTML = `The area of this ellipse is: ${ellipseFormula.toFixed(2)}`;
+}
+/*CIRCULAR CROWN AREA*/
+function crown() {
+    let inp1 = Number(document.getElementById("inp1").value);
+    let inp2 = Number(document.getElementById("inp2").value);
+    let result = document.getElementById("result");
+
+    let circularCrownFormula = Math.PI * (inp1 ** 2 - inp2 ** 2);
+  
+    inp1 == "" || inp2 == ""
+    ? result.innerHTML = `Please, fulfill al the field!`
+    : result.innerHTML = `The area of this circular crown is: ${circularCrownFormula.toFixed(2)}`;
+}
+function sector() {
+    let inp1 = Number(document.getElementById("inp1").value);
+    let inp2 = Number(document.getElementById("inp2").value);
+    let result = document.getElementById("result");
+
+    let circularSectorFormula = Math.PI * (inp1 ** 2 * inp2) / 360;
+  
+    inp1 == "" || inp2 == ""
+    ? result.innerHTML = `Please, fulfill al the field!`
+    : result.innerHTML = `The area of this circular sector is: ${circularSectorFormula.toFixed(2)}`;
+}
+
+
