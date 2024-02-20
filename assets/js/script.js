@@ -1,3 +1,51 @@
+/*FACTORING*/
+function factoring() {
+    let inp1 = Number(document.getElementById('inp1').value);
+    let result = document.getElementById('result');
+    let factors = [];
+
+    for (var i = 2; i <= inp1; i++) {
+        while (inp1 % i === 0) {
+            factors.push(i);
+            inp1 /= i;
+        }
+    }
+    result.innerHTML = "Fatores: " + factors.join(", ");
+}
+
+
+
+/*GCD*/
+function findGDC() {
+    let inp1 = Number(document.getElementById('inp1').value);
+    let inp2 = Number(document.getElementById('inp2').value);
+    let inp3 = Number(document.getElementById('inp3').value);
+    let inp4 = Number(document.getElementById('inp4').value);
+    let inp5 = Number(document.getElementById('inp5').value);
+    let inp6 = Number(document.getElementById('inp6').value);
+    let result = document.getElementById('result');
+
+    function calcGDC(a, b) {
+        while (b !== 0) {
+            var temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    var gdc1 = calcGDC(number1, number2);
+    var gdc2 = calcGDC(gdc1, number3);
+    var gdc3 = calcGDC(gdc2, number4);
+    var gdc4 = calcGDC(gdc3, number5);
+    var gdcFinal = calcGDC(gdc4, number6);
+
+    result.innerHTML = "O maior divisor comum é: " + gdcFinal;
+    
+}
+
+
+
 /*PERCENTAGEs*/
 /*PERCENTAGE 1*/
 function percentage1() {
@@ -71,12 +119,14 @@ function percentage6() {
 /*SIMPLE RULE OF 3*/
 function ruleOf3() {
     let inp1 = Number(document.getElementById('inp1').value);
-    let inp2 = Number(document.getElementById('inp2').value);
-    let inp3 = Number(document.getElementById('inp3').value);
-    let result = document.getElementById('result');
     let sum = (inp2 * inp3) / inp1;
 
     inp1 == "" || inp2 == "" || inp3 == ""
-    ? result.innerHTML = `Please, fulfill al the field!`
+    ? result.innerHTML = `?`
     : result.innerHTML = `${sum.toFixed(2)}`
 }
+
+
+
+
+

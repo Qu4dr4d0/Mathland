@@ -140,19 +140,19 @@
 
           <h1>Simple Rule of Three Calculator</h1>
           <p>The simple rule of three calculator allows you to discover a number in proportion to two others that are known.</p>
-          <section id="rule3_form" class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
+          <form id="rule3_form" class="flex p-2 mb-4 bg-secondary-subtle rounded align-items-center d-flex flex-column">
             <div class="input-group mb-3">
-              <input id="inp1" type="text" class="form-control text-center rule3_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <input required id="inp1" type="text" class="form-control text-center rule3_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
               <span class="input-group-text"><i class="fa-solid fa-arrow-right"></i></span>
-              <input id="inp2" type="text" class="form-control text-center rule3_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <input required id="inp2" type="text" class="form-control text-center rule3_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
             </div>
             <div class="input-group mb-3">
-              <input id="inp3" type="text" class="form-control text-center rule3_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <input required id="inp3" type="text" class="form-control text-center rule3_input" placeholder="--" aria-label="Example text with button addon" aria-describedby="button-addon1">
               <span class="input-group-text"><i class="fa-solid fa-arrow-right"></i></span>
               <span id="result" class="input-group-text d-flex justify-content-center fw-semibold" style="flex: 1;">X</span>
             </div>
             <button onclick="ruleOf3()" id="ruleOf3_btn" class="btn btn-outline-secondary btn-light mb-3" type="button">Calculate</button>
-          </section>
+          </form>
 
         <!--STOP MAKING CHANGES HERE!!-->
 
